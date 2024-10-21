@@ -1,9 +1,93 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="wbMIrpc7nbPzTftHk01B">
-    <mxGraphModel>
+    <mxGraphModel dx="1302" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-1" value="&lt;div style=&quot;background-color:#ffffff;color:#080808&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color: rgb(140, 140, 140); font-style: italic;&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color: rgb(140, 140, 140); font-style: italic; font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;代办事项记录&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;create table &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;xt_todo_item&lt;br&gt;&lt;/span&gt;(&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;id                &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;varchar&lt;/span&gt;(&lt;span style=&quot;color: rgb(23, 80, 235);&quot;&gt;50&lt;/span&gt;)  &lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;not null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;主键&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;primary key&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;read_status       &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;tinyint      null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;阅读状态&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt; 1-&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;未读&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt; 2-&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;已读&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;status            &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;tinyint      null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;审核状态&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt; 1-&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;未办&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt; 2-&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;已办&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;title             &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;varchar&lt;/span&gt;(&lt;span style=&quot;color: rgb(23, 80, 235);&quot;&gt;200&lt;/span&gt;) &lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;标题&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;module_code       &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;varchar&lt;/span&gt;(&lt;span style=&quot;color: rgb(23, 80, 235);&quot;&gt;50&lt;/span&gt;)  &lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;模块编码&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;related_record_id &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;varchar&lt;/span&gt;(&lt;span style=&quot;color: rgb(23, 80, 235);&quot;&gt;50&lt;/span&gt;)  &lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;相关记录&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;ID&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;auditor_id        &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;varchar&lt;/span&gt;(&lt;span style=&quot;color: rgb(23, 80, 235);&quot;&gt;50&lt;/span&gt;)  &lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;审核人&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;ID&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;auditor_group_id  &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;varchar&lt;/span&gt;(&lt;span style=&quot;color: rgb(23, 80, 235);&quot;&gt;50&lt;/span&gt;)  &lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;审核组&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;ID&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;create_time       &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;datetime     null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;创建时间&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;,&lt;br&gt;    &lt;span style=&quot;color: rgb(135, 16, 148);&quot;&gt;update_time       &lt;/span&gt;&lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;datetime     null comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;更新时间&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;br&gt;&lt;/span&gt;)&lt;br&gt;    &lt;span style=&quot;color: rgb(0, 51, 179);&quot;&gt;comment &lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23); font-family: &amp;quot;Courier New&amp;quot;, monospace;&quot;&gt;代办事项记录&lt;/span&gt;&lt;span style=&quot;color: rgb(6, 125, 23);&quot;&gt;&#39;&lt;/span&gt;;&lt;/pre&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry width="490" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-3" target="mSLMhNPtp4dEcWAmgXCN-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-3" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-4" target="mSLMhNPtp4dEcWAmgXCN-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-4" value="xx模块&lt;br&gt;新增记录，需要审核" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-6" target="mSLMhNPtp4dEcWAmgXCN-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-6" value="根据模块的信息&lt;br&gt;新增审核记录&lt;br&gt;补充对应的信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-8" value="需求：&lt;div&gt;1. 需要审核的模块在新增记录的时候，新增一条代办事项&lt;/div&gt;&lt;div&gt;2. 代办事项的查询需要权限控制&lt;/div&gt;&lt;div&gt;3. 待办事项支持已读和未读 （已读的标准未知）&lt;/div&gt;&lt;div&gt;4. 审核完毕，代办事项的已办状态更改&lt;/div&gt;&lt;div&gt;5. 代办事项的已办历史查询&lt;/div&gt;&lt;div&gt;6. 代办事项的已读历史查询&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="295" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-9" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-11" target="mSLMhNPtp4dEcWAmgXCN-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-11" value="开始" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-12" target="mSLMhNPtp4dEcWAmgXCN-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-12" value="用户登录查询工作台" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-14" target="mSLMhNPtp4dEcWAmgXCN-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-14" value="1.根据用户的id查询代办事项&lt;div&gt;2.根据用户的部门id查询代办事项&lt;/div&gt;&lt;div&gt;3.查询用户id和部门id都为空的待办事项&lt;/div&gt;&lt;div&gt;4.整合上面的三种待办事项，返回&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="710" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-16" target="mSLMhNPtp4dEcWAmgXCN-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-16" value="用户点击待办事项" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="895" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-18" target="mSLMhNPtp4dEcWAmgXCN-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-18" value="1.修改代办事项的状态为已读&lt;div&gt;2.前端根据模块编码和相关id跳转到对应的模块的处理页面（前端能否实现？）&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="1010" width="295" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-20" target="mSLMhNPtp4dEcWAmgXCN-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-20" value="用户审核完记录" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1169" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-22" target="mSLMhNPtp4dEcWAmgXCN-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-22" value="根据相关记录id查询到代办记录" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1309" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mSLMhNPtp4dEcWAmgXCN-24" target="mSLMhNPtp4dEcWAmgXCN-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-24" value="修改代办记录的状态为已办" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1449" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-26" value="结束" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1579" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-28" value="如果代办记录是分配的组或者没有分配人和组的情况&lt;br&gt;&lt;div&gt;其他人处理了代办事项会出现先未读但是已办的情况&lt;/div&gt;&lt;div&gt;这样是否合理？&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1449" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mSLMhNPtp4dEcWAmgXCN-29" value="&lt;font color=&quot;#ff0000&quot;&gt;两个流程能否使用AOP切面实现？&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="225" y="520" width="200" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
